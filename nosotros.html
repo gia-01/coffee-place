@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-right">
+            <img src="Assets/logo-coffee place.png" alt="Logo">
+            <span class="header-title">Coffee Place</span>
+        </div>
+        <div class="header-left">
+            <a href="iniciar_secion.html">
+                <img src="Assets/user-svgrepo-com.svg" alt="User Icon">
+            </a>
+            <span>Iniciar sesión</span>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav class="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="cafeteria.html">Cafetería</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección de Nosotros -->
+        <section class="nosotros">
+            <h2>Nosotros</h2>
+            <!-- Imagen grande reemplazando el mapa -->
+            <div class="imagen-contenedor">
+                <img src="assets/blog01.jpg" alt="Imagen de Coffee Place" class="imagen">
+            </div>
+            <!-- Espacio para información debajo de la imagen -->
+            <div class="info-nosotros">
+                <p>Dirección: Av. Rosales 187, San Isidro</p>
+                <p>Teléfono: 123-456-789</p>
+                <p>Email: contacto@coffeeplace.com</p>
+            </div>
+        </section>
+
+        <!-- Sección de Compartir -->
+        <section class="compartir">
+            <h2>Compartir</h2>
+            <div class="social-icons-nosotros">
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/logotipo-de-instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="assets/X.png" alt="Twitter"></a>
+            </div>
+        </section>
+
+        <!-- Sección de Dejar un Comentario -->
+        <section class="comentarios-nosotros">
+            <h2>Dejar un Comentario</h2>
+            <form action="enviar_comentario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer id="contacto"> <!-- id "contacto" -->
+        <div class="footer-section">
+            <h3>Mi Cuenta</h3>
+            <a href="iniciar_secion.html">Crear cuenta</a>
+            <a href="iniciar_secion.html">Iniciar sesión</a>
+            <a href="index.html">Cerrar sesión</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Teléfono: 123456789</p>
+            <p>Email: CoffeePlace@hotmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Información</h3>
+            <a href="nosotros.html">Nosotros</a>
+            <p>Dirección: Av.Rosales 187 san isidro</p>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <a href="terminos_condiciones.html">Términos y Condiciones</a>
+            <a href="politica_privacidad.html">Políticas de Privacidad</a>
+        </div>
+        <div class="footer-section">
+            <h3>Redes Sociales</h3>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="assets/logotipo-de-instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="assets/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <img src="assets/whatsapp.png" alt="Whatsapp">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="assets/X.png" alt="X">
+                </a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Medios de Pago</h3>
+            <p>Visa, Mastercard, PayPal, etc.</p>
+            <div class="logos">
+                <img src="assets/visa-svgrepo-com.svg" alt="Visa">
+                <img src="assets/paypal-svgrepo-com.svg" alt="Paypal">
+                <img src="assets/mastercard-svgrepo-com.svg" alt="Mastercard">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Derechos Reservados -->
+    <div class="rights">
+        <p>Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
